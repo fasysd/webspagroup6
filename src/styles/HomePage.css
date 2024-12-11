@@ -1,0 +1,82 @@
+.homepage {
+    font-family: 'Poppins', sans-serif;
+    background: url('/public/LAVIE-removebg-logo.png        ') no-repeat center center fixed; /* Thay đổi đường dẫn tới ảnh mới */
+    background-size: cover; /* Ảnh sẽ phủ toàn bộ màn hình */
+    color: white; /* Màu chữ cho dễ đọc */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.7); /* Lớp phủ mờ giúp nội dung nổi bật */
+    color: #333; /* Màu chữ đậm */
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #DB7093; /* Màu sắc chữ chính cho tiêu đề */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.spa-list-section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Lớp phủ trắng để tạo sự tách biệt */
+    color: #333;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spa-list-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #DB7093; /* Màu cho tiêu đề của phần dịch vụ */
+}
+
+.spa-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.spa-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spa-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.spa-card p {
+    font-size: 1rem;
+    color: #555;
+}

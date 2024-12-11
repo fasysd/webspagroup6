@@ -1,0 +1,101 @@
+/* Chỉ áp dụng cho các trang có class .login-register-container */
+.login-register-container {
+    max-width: 400px; /* Chiều rộng tối đa của form */
+    width: 100%;
+    padding: 30px;
+    background-color: #fff; /* Nền trắng cho form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    margin: 0 auto; /* Căn giữa form */
+}
+
+/* Căn giữa trang đăng nhập và đăng ký với flexbox */
+.login-register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao trang chiếm hết màn hình */
+    background-color: #f4c2d7; /* Màu nền nhẹ cho trang */
+    font-family: 'Poppins', sans-serif; /* Font chữ đẹp */
+}
+
+/* Tiêu đề trong form đăng nhập và đăng ký */
+.login-register-container h1 {
+    text-align: center;
+    color: #db7093; /* Màu sắc tiêu đề */
+    margin-bottom: 20px;
+}
+
+/* Form đăng nhập/đăng ký */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các ô input */
+}
+
+/* Label cho input */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input ô nhập liệu */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #db7093;
+}
+
+/* Nút đăng nhập/đăng ký */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #db7093;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c46482;
+}
+
+/* Khu vực mật khẩu (ẩn/hiện mật khẩu) */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Link chuyển giữa các trang */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #db7093;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

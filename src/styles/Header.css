@@ -1,0 +1,71 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4c2d7; /* Màu hồng nhẹ mặc định */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+}
+.logo img {
+    height: 50px; /* Kích thước logo vừa phải */
+    width: auto;
+}
+
+.header .header__mainHeader {
+    padding-right: var((100% - width)/2);
+    padding-left: var((100% - width)/2);
+    width: 80%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header .header__subtitleHeader {
+    width: 100%;
+    background: #fce5ef;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header .listNav {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.header .listNav button {
+    height: 50px;
+    width: 150px;
+    background: none;
+    padding: 10px 0 10px 0;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header .listNav button a {
+    text-decoration: none;
+    color: #333; /* Màu chữ đậm */
+    transition: color 0.3s ease;
+}
+
+.header .listNav button:hover {
+    background: #8745454f;
+}
