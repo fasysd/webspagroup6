@@ -1,0 +1,164 @@
+.Schedule {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 0px;
+    align-items: center;
+}
+
+
+.Schedule__Option{
+    top: -10px;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e89bbc;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.Schedule__List {
+    width: 70%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+._Schedule__List_headerTime {
+    font-size: 25px;
+    color: aliceblue;
+    width: 100%;
+    background: linear-gradient( 90deg, #ffffff00, #e95f9b, #ffffff00);
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.Schedule__List__item--normalStatus {
+    width: 90%;
+    transition: transform 0.2s;
+}
+.Schedule__List__item--normalStatus:hover {
+    transform: scale(1.1);
+}
+
+.Schedule__List__item__mainContent {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    z-index: 5;
+    display: flex;
+    background: #ff89bc;
+    color: white;
+    padding: 10px 0px 10px 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.Schedule__List__item__timeContainer {
+    width: 20%;
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Schedule__List__item__timeContainer__hour {
+    font-size: 50px;
+}
+
+.Schedule__List__item__informationContainer{
+    flex: 1;
+}
+
+.Schedule__List__name {
+    font-size: 30px;
+    text-align: left;
+}
+
+.Schedule__List__address {
+    font-size: 16px;
+    text-align: left;
+}
+
+.Schedule__List__item__settingButton {
+    display: none;
+    position: relative;
+    margin-right: 30px;
+    align-items: center;
+    align-content: center;
+    color: #00000000;
+}
+
+.Schedule__List__item--normalStatus:hover .Schedule__List__item__settingButton {
+    display: block;
+}
+.Schedule__List__item__settingButton img {
+    width: 50px;
+    transition: transform 0.2s;
+}
+.Schedule__List__item__settingButton img:hover{
+    transform: scale(1.2);
+}
+
+@keyframes Schedule__List__item__dropdownContent--on{
+    0% { 
+        max-height: 0px;
+        color: #00000000;
+    }
+    30% {
+        color: white;
+    }
+    100% {
+        max-height: 100vh;
+    }
+}
+.Schedule__List__item__dropdownContent--on {
+    position: relative;
+    top: -20px;
+    z-index: 1;
+    color: white;
+    background-color: #a3446d;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 32px 16px 16px 16px;
+    border-radius: 0 0 20px 20px;
+    
+    animation-name: Schedule__List__item__dropdownContent--on;
+    animation-duration: 1s;
+}
+
+@keyframes Schedule__List__item__dropdownContent--off{
+    0% {
+        display: block;
+        max-height: 100vh;
+        position: relative;
+        z-index: 1;
+        color: white;
+        background-color: #a3446d;
+        padding: 32px 16px 16px 16px;
+    }
+    30% {
+        color: #00000000;
+    }
+}
+.Schedule__List__item__dropdownContent--off {
+    top: -20px;
+    display: none;
+    z-index: 1;
+    color: #00000000;
+    background-color: #00000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 20px 20px;
+    max-height: 0;
+    
+    animation-name: Schedule__List__item__dropdownContent--off;
+    animation-duration: 0.2s;
+}
